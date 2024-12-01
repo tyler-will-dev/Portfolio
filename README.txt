@@ -5,7 +5,7 @@
 
 npm run build: Build the React App for production
 
-npm-start: Starts the development server
+npm start: Starts the development server
 
 git add .: Stages the changes
 
