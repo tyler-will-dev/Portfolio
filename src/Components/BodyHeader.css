@@ -1,0 +1,21 @@
+/* Header */
+.App-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header-icons a {
+    color: #f0c14b;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .header-icons a:hover {
+    text-decoration: underline;
+  }
