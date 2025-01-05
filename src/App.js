@@ -5,35 +5,35 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import PageDemo from './Pages/PageDemo';
 
 function App() {
-  const currentLocation = useLocation();
-
-  const getCurrentLocation = () => {
-    return currentLocation.pathname === './PageDemo' ? 'PageDemo' : 'App';
-  }
+  const location = useLocation();
+  const isPageDemo = location.pathname === '/PageDemo';
 
   return (
-            <div className={getCurrentLocation()}>
-              <div className="full-screen-wrapper">
-                <div className="page-container">
-                  {currentLocation.pathname !== '/PageDemo' && (
-                    <>
-                      <div className="corner-top-left"></div>
-                      <div className="corner-bottom-right"></div>
-                      <BodyHeader />
-                    </>
-                  )}
-                  <Routes>
-                    <Route path="/" element={<BodyContent />} />
-                    <Route path="/PageDemo" element={<PageDemo />} />
-                  </Routes>
-                </div>
-              </div>
+    <div className="App-wrapper">
+      {!isPageDemo && (
+        <div className="full-screen-wrapper">
+          <div className="page-container">
+            <div className="corner-top-left"></div>
+            <div className="corner-bottom-right"></div>
+            <BodyHeader />
+            <Routes>
+              <Route path="/" element={<BodyContent />} />
+            </Routes>
+          </div>
+        </div>
+      )}
 
-              <footer className="App-footer">
-                <p>©2024 tylerwill.dev@gmail.com</p>
-              </footer>
-            </div>
-        );
+      {isPageDemo && (
+        <Routes>
+          <Route path="/PageDemo" element={<PageDemo />} />
+        </Routes>
+      )}
+
+      <footer className="App-footer">
+        <p>©2024 tylerwill.dev@gmail.com</p>
+      </footer>
+    </div>
+  );
 }
 
 function AppWithRouter() {
@@ -41,7 +41,7 @@ function AppWithRouter() {
     <Router>
       <App />
     </Router>
-  )
+  );
 }
 
 export default AppWithRouter;

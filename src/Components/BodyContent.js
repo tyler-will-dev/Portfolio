@@ -23,7 +23,7 @@ function BodyContent() {
             <li><a href="Link">Thunderstore Mod</a></li>
             <li><a href="Link">Godot Game</a></li>
             <li>
-                <Link to="/PageDemo">Simple Browser Game</Link>
+                <Link to="/PageDemo">Simple Browser Demo</Link>
             </li>
           </ul>
         </div>

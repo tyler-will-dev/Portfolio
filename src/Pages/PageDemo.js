@@ -1,34 +1,55 @@
-import React, {useState} from 'react';
-import Icon from '@mui/material/Icon';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Icon from '@mui/material/Icon';
 import CottageIcon from '@mui/icons-material/Cottage';
+import WeatherAPI from './Tabs/WeatherAPI';
+import styles from './PageDemo.module.css';
 
 function PageDemo() {
     const navigate = useNavigate();
-    const [hover, setHover] = useState(false);
+    const [activeTab, setActiveTab] = useState('weather');
 
     const returnHome = () => {
-       navigate('/');
-    }
+        navigate('/');
+    };
 
     return (
-        <div className="test-page">
-            <Icon
-                onClick={returnHome}
-                onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => setHover(false)}
-                style={{
-                    cursor: 'pointer',
-                    transform: hover ? 'scale(1.2)' : 'scale(1)',
-                    color: hover ? '#f0c14b' : 'inherit',
-                    transition: 'transform 0.2s, color 0.2s',
-                }}
-            >
-                <CottageIcon />
-            </Icon>
+        <div className={styles.dashboard}>
+            <header className={styles.header}>
+                <Icon
+                    onClick={returnHome}
+                    className={styles.homeIcon}
+                >
+                    <CottageIcon />
+                </Icon>
+            </header>
 
-            <h1>Welcome to the Test Page!</h1>
-            <p>Placing contents of a demo/project</p>
+            <aside className={styles.sidebar}>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'weather' ? styles.active : ''}`}
+                    onClick={() => setActiveTab('weather')}
+                >
+                    Weather
+                </button>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'github' ? styles.active : ''}`}
+                    onClick={() => setActiveTab('github')}
+                >
+                    GitHub
+                </button>
+            </aside>
+
+            <main className={styles.content}>
+                {activeTab === 'weather' && (
+                    <WeatherAPI/>
+                )}
+                {activeTab === 'github' && (
+                    <div>
+                        <h2>GitHub Repositories</h2>
+                        <p>Display GitHub repositories here...</p>
+                    </div>
+                )}
+            </main>
         </div>
     );
 }
