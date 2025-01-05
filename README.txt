@@ -7,6 +7,8 @@
 ## Commands
 npm run build: Build the React App for production
 
+npm run deploy: Publishes the build to the gh-pages branch on GitHub
+
 npm start: Starts the development server
 
 git add .: Stages the changes

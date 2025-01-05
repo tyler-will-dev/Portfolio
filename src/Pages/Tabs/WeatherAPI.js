@@ -7,8 +7,7 @@ function WeatherAPI() {
     const [weatherData, setWeatherData] = useState(null); 
     const [loading, setLoading] = useState(false); 
     const [error, setError] = useState(null); 
-
-    const API_KEY = 'c9909028e67d3809bb35550858571136';
+    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
     const fetchWeather = async (city) => {
         setLoading(true);
