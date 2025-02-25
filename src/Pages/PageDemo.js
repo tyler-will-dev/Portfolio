@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Icon from '@mui/material/Icon';
 import CottageIcon from '@mui/icons-material/Cottage';
-import WeatherAPI from './Tabs/WeatherAPI';
+import WeatherAPI from './Tabs/Weather/WeatherAPI';
 import styles from './PageDemo.module.css';
 
 function PageDemo() {
@@ -36,6 +36,12 @@ function PageDemo() {
                     onClick={() => setActiveTab('github')}
                 >
                     GitHub
+                </button>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'nodejs' ? styles.active : ''}`}
+                    onClick={() => setActiveTab('nodejs')}
+                >
+                    Buttons
                 </button>
             </aside>
 
