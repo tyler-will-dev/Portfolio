@@ -11,9 +11,6 @@ function BodyHeader() {
           <a href="https://github.com/JengaJones">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/...">
-            <i className="fab fa-twitter"></i>
-          </a>
         </div>
       </header>
     )
