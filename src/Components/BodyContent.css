@@ -72,3 +72,31 @@
   .projects-section a:hover {
     text-decoration: underline;
   }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .welcome-section h1 {
+      font-size: 3rem;
+    }
+  
+    .welcome-section p {
+      font-size: 1rem;
+      line-height: 1.4;
+      max-width: 90%;
+    }
+  }  
+  
+  @media (max-width: 768px) {
+    .content-row {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .projects-section {
+      margin-top: 2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+  }  

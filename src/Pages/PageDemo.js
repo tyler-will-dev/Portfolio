@@ -8,6 +8,7 @@ import styles from './PageDemo.module.css';
 function PageDemo() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('weather');
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const returnHome = () => {
         navigate('/');
@@ -22,33 +23,46 @@ function PageDemo() {
                 >
                     <CottageIcon />
                 </Icon>
+                <button 
+                    className={styles.menuButton} 
+                    onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                >
+                    ☰
+                </button>
             </header>
 
-            <aside className={styles.sidebar}>
+            <aside className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ''}`}>
                 <button
                     className={`${styles.tabButton} ${activeTab === 'weather' ? styles.active : ''}`}
-                    onClick={() => setActiveTab('weather')}
+                    onClick={() => {
+                        setActiveTab('weather');
+                        setIsSidebarOpen(false);
+                    }}
                 >
                     Weather
                 </button>
                 <button
                     className={`${styles.tabButton} ${activeTab === 'github' ? styles.active : ''}`}
-                    onClick={() => setActiveTab('github')}
+                    onClick={() => {
+                        setActiveTab('github');
+                        setIsSidebarOpen(false);
+                    }}
                 >
                     GitHub
                 </button>
                 <button
                     className={`${styles.tabButton} ${activeTab === 'nodejs' ? styles.active : ''}`}
-                    onClick={() => setActiveTab('nodejs')}
+                    onClick={() => {
+                        setActiveTab('nodejs');
+                        setIsSidebarOpen(false);
+                    }}
                 >
                     Buttons
                 </button>
             </aside>
 
             <main className={styles.content}>
-                {activeTab === 'weather' && (
-                    <WeatherAPI/>
-                )}
+                {activeTab === 'weather' && <WeatherAPI />}
                 {activeTab === 'github' && (
                     <div>
                         <h2>GitHub Repositories</h2>

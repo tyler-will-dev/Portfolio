@@ -19,3 +19,15 @@
   .header-icons a:hover {
     text-decoration: underline;
   }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .header-icons {
+      gap: 1.5rem;
+      justify-content: center;
+    }
+  
+    .header-icons a {
+      font-size: 2rem;
+    }
+  }

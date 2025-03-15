@@ -8,13 +8,12 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-              My name is Tyler Will, I am a Full-Stack developer based out of Austin, Texas. 
-              I have professional experience working at General Motors in the Motorsports Organization developing
-              web-based applications to run race simulations for NASCAR, Indy, Truck, Xfinity, and Formula 1.
+            My name is Tyler Will, a Full-Stack Developer based in Austin, Texas. I have professional experience at General Motors within the Motorsports Organization, 
+            where I developed web-based applications to power race simulations for NASCAR, IndyCar, Truck, Xfinity, and Formula 1
             </p>
             <p>
-              I am passionate about solid programming design, coding principles, 
-              and a codebase that is maintainable and optimal for both users and developers.
+            I’m passionate about building maintainable, well-structured codebases that prioritize both performance and usability. 
+            I focus on solid programming principles and scalable design to create seamless experiences for both users and developers.
             </p>
           </div>
           <div className="projects-section">

@@ -54,3 +54,11 @@ body {
   padding: .1rem 0;
   color: #666;
 }
+
+@media (max-width: 768px) {
+  .App-footer {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    text-align: center;
+  }
+}
