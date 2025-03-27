@@ -20,7 +20,13 @@ function BodyContent() {
             <h2>Projects</h2>
             <ul>
               <li>
-                  <Link to="/ThunderstoreMod">Thunderstore Mod</Link>
+                <a 
+                  href="https://JengaJones.github.io/NoteApp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Note App
+                </a>
               </li>
               <li>
                   <Link to="/GodotGame">Godot Game</Link>
