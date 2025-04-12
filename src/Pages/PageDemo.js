@@ -51,13 +51,13 @@ function PageDemo() {
                     GitHub
                 </button>
                 <button
-                    className={`${styles.tabButton} ${activeTab === 'nodejs' ? styles.active : ''}`}
+                    className={`${styles.tabButton} ${activeTab === 'data' ? styles.active : ''}`}
                     onClick={() => {
-                        setActiveTab('nodejs');
+                        setActiveTab('data');
                         setIsSidebarOpen(false);
                     }}
                 >
-                    Buttons
+                    Data
                 </button>
             </aside>
 
@@ -66,7 +66,13 @@ function PageDemo() {
                 {activeTab === 'github' && (
                     <div>
                         <h2>GitHub Repositories</h2>
-                        <p>Display GitHub repositories here...</p>
+                        <p>Coming soon...</p>
+                    </div>
+                )}
+                {activeTab === 'data' && (
+                    <div>
+                        <h2>Data Dashboards</h2>
+                        <p>Coming soon...</p>
                     </div>
                 )}
             </main>

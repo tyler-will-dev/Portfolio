@@ -8,12 +8,12 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-            My name is Tyler Will, a Full-Stack Developer based in Austin, Texas. I have professional experience at General Motors within the Motorsports Organization, 
-            where I developed web-based applications to power race simulations for NASCAR, IndyCar, Truck, Xfinity, and Formula 1
+              I’m Tyler Will, a developer based in Austin, Texas with experience building internal tools at General Motors to support NASCAR, IndyCar, and Formula 1 race teams. 
+              These tools helped race teams make faster, smarter decisions through accessible data and real-time performance insights.
             </p>
             <p>
-            I’m passionate about building maintainable, well-structured codebases that prioritize both performance and usability. 
-            I focus on solid programming principles and scalable design to create seamless experiences for both users and developers.
+              I'm now focused on data engineering — designing scalable systems, writing clean code, and solving real problems with real data. I’m especially drawn to roles in 
+              aerospace and healthcare where technical skill and reliability make a real impact, and where I can keep learning while staying hands-on.
             </p>
           </div>
           <div className="projects-section">
