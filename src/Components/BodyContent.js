@@ -8,12 +8,13 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-              I’m Tyler Will, a developer based in Austin, Texas with experience building internal tools at General Motors to support NASCAR, IndyCar, and Formula 1 race teams. 
-              These tools helped race teams make faster, smarter decisions through accessible data and real-time performance insights.
+              I’m Tyler Will, a systems-focused engineer with a background in internal tools and simulation platforms, previously supporting NASCAR, IndyCar, and Formula 1 race teams at 
+              General Motors. I built tools for a Race Vehicle Simulation application that provided support to race engineers.
             </p>
             <p>
-              I'm now focused on data engineering — designing scalable systems, writing clean code, and solving real problems with real data. I’m especially drawn to roles in 
-              aerospace and healthcare where technical skill and reliability make a real impact, and where I can keep learning while staying hands-on.
+              Now I’m transitioning into cybersecurity and data infrastructure, with a focus on secure systems, reliable architecture, and real-world impact. 
+              I’m especially interested in roles that blend automation, observability, and security; Ideally in industries like aerospace, healthcare, or defense where precision and trust matter. 
+              I’m hands-on, always learning, and driven by solving problems that keep systems strong and people supported.
             </p>
           </div>
           <div className="projects-section">
@@ -21,7 +22,7 @@ function BodyContent() {
             <ul>
               <li>
                 <a 
-                  href="https://JengaJones.github.io/NoteApp" 
+                  href="https://tyler-will-dev.github.io/NoteApp/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -29,7 +30,7 @@ function BodyContent() {
                 </a>
               </li>
               <li>
-                  <Link to="/GodotGame">Godot Game</Link>
+                  <Link to="/GodotGame">Cyber Security</Link>
               </li>
               <li>
                   <Link to="/PageDemo">Simple Browser Demo</Link>

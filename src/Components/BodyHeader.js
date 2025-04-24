@@ -5,7 +5,7 @@ function BodyHeader() {
         <header className="App-header">
         <div className="header-icons">
           <a
-            href={process.env.PUBLIC_URL + "/TylerWill_DataEngineer_Resume.pdf"} 
+            href={process.env.PUBLIC_URL + "/TylerWill_SecurityEngineer_Resume"} 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -14,7 +14,7 @@ function BodyHeader() {
           <a href="https://www.linkedin.com/in/tyler-will-57029916a/">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/JengaJones">
+          <a href="https://github.com/tyler-will-dev">
             <i className="fab fa-github"></i>
           </a>
         </div>
