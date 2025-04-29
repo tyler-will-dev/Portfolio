@@ -2,7 +2,7 @@
 -----------------------
 
 ## Notes
-- Defaults to top level folder instead of 'tylerportfolio' folder 
+- Defaults to top level folder instead of 'tylerportfolio' folder
 
 ## Commands
 npm run build: Build the React App for production

@@ -21,6 +21,9 @@ function BodyContent() {
             <h2>Projects</h2>
             <ul>
               <li>
+                  <Link to="/CyberSecurity">Cyber Security</Link>
+              </li>
+              <li>
                 <a 
                   href="https://tyler-will-dev.github.io/NoteApp/" 
                   target="_blank" 
@@ -28,9 +31,6 @@ function BodyContent() {
                 >
                   Note App
                 </a>
-              </li>
-              <li>
-                  <Link to="/GodotGame">Cyber Security</Link>
               </li>
               <li>
                   <Link to="/PageDemo">Simple Browser Demo</Link>

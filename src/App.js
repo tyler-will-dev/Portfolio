@@ -3,18 +3,18 @@ import BodyHeader from './Components/BodyHeader';
 import BodyContent from './Components/BodyContent';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import PageDemo from './Pages/PageDemo';
-import GodotGame from './Pages/GodotGame';
+import CyberSecurity from './Pages/CyberSecurity';
 import ThunderstoreMod from './Pages/ThunderstoreMod';
 
 function App() {
   const location = useLocation();
   const isPageDemo = location.pathname === '/PageDemo';
-  const isGodotGame = location.pathname === '/GodotGame';
+  const isCyberSecurity = location.pathname === '/CyberSecurity';
   const isThunderstoreMode = location.pathname === '/ThunderstoreMod';
 
   return (
     <div className="App-wrapper">
-      {!isPageDemo && !isGodotGame && !isThunderstoreMode && (
+      {!isPageDemo && !isCyberSecurity && !isThunderstoreMode && (
         <div className="full-screen-wrapper">
           <div className="page-container">
             <div className="corner-top-left"></div>
@@ -33,9 +33,9 @@ function App() {
         </Routes>
       )}
 
-      {isGodotGame && (
+      {isCyberSecurity && (
         <Routes>
-          <Route path="/GodotGame" element={<GodotGame />} />
+          <Route path="/CyberSecurity" element={<CyberSecurity />} />
         </Routes>
       )}
 
