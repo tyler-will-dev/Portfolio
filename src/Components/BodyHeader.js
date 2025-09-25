@@ -5,7 +5,7 @@ function BodyHeader() {
         <header className="App-header">
         <div className="header-icons">
           <a
-            href={process.env.PUBLIC_URL + "/TylerWill_SecurityEngineer_Resume.pdf"} 
+            href={process.env.PUBLIC_URL + "/TylerWill_CyberSecurity_Resume.pdf"} 
             target="_blank" 
             rel="noopener noreferrer"
           >
