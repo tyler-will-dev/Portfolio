@@ -8,13 +8,14 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-              I’m Tyler Will, a systems-focused engineer with a background in internal tools and simulation platforms, previously supporting NASCAR, IndyCar, and Formula 1 race teams at 
-              General Motors. I built tools for a Race Vehicle Simulation application that provided support to race engineers.
+              I’m Tyler Will, a systems-focused engineer with a background in building secure internal tools and simulation platforms, including applications that supported NASCAR, 
+              IndyCar, and Formula 1 race teams at General Motors. My work delivered mission-critical insights to engineers in high-performance environments where precision and 
+              reliability mattered most
             </p>
             <p>
-              Now I’m transitioning into cybersecurity and data infrastructure, with a focus on secure systems, reliable architecture, and real-world impact. 
-              I’m especially interested in roles that blend automation, observability, and security; Ideally in industries like aerospace, healthcare, or defense where precision and trust matter. 
-              I’m hands-on, always learning, and driven by solving problems that keep systems strong and people supported.
+              Today, I apply that same focus to cybersecurity and data infrastructure, with expertise in secure systems, IAM controls, SIEM monitoring, and cloud security. 
+              I’m passionate about roles that combine automation, observability, and defense. I am hands-on, driven, and I thrive on solving complex problems that keep systems 
+              strong and people supported
             </p>
           </div>
           <div className="projects-section">
