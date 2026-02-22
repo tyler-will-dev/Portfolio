@@ -70,9 +70,33 @@ function PageDemo() {
                     </div>
                 )}
                 {activeTab === 'data' && (
-                    <div>
+                    <div className={styles.dashboardContainer}>
                         <h2>Data Dashboards</h2>
-                        <p>Coming soon...</p>
+                        
+                        {/* ThreatLens Project Card */}
+                        <div className={styles.projectCard}>
+                            <div className={styles.projectHeader}>
+                                <h3>🛡️ ThreatLens: Automated Threat Intelligence</h3>
+                                <a 
+                                    href="https://github.com/tyler-will-dev/ThreatLens-Automated-ETL" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className={styles.githubButton}
+                                >
+                                    View Source Code ↗
+                                </a>
+                            </div>
+                            <p className={styles.projectDescription}>
+                                An end-to-end automated ETL pipeline and cross-filtered Business Intelligence dashboard designed to monitor active malware threats against internal assets.
+                            </p>
+                            <div className={styles.techTags}>
+                                <span className={styles.tag}>Python</span>
+                                <span className={styles.tag}>PostgreSQL</span>
+                                <span className={styles.tag}>Power BI</span>
+                                <span className={styles.tag}>SQL</span>
+                            </div>
+                        </div>
+
                     </div>
                 )}
             </main>

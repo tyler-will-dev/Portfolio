@@ -8,14 +8,12 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-              I’m Tyler, I am a systems-focused engineer with a background in building mission-critical simulation platforms and secure internal tools. 
-              My experience includes architecting high-volume telemetry pipelines and production-ready data layers that supported high-performance teams in NASCAR, IndyCar, and Formula 1. 
-              I specialize in translating complex telemetry into actionable insights, having historically reduced manual testing overhead by 60% through custom automation and Python-based validation scripts
+              I am a systems-focused data analyst with a background in architecting high-volume telemetry pipelines for NASCAR, IndyCar, and Formula 1. 
+              I specialize in working behind the scenes to build automated Python pipelines that translate complex, raw data into actionable insights and significantly reduce manual overhead.
             </p>
             <p>
-              Currently, I focus on the intersection of data engineering and security operations, developing analytical datasets for strategic risk mitigation and automating complex feature engineering. 
-              In my free time, I stay hands-on by dabbling in cybersecurity research and exploring defensive cloud architectures to sharpen my technical edge. 
-              I am driven by the challenge of creating resilient, automated infrastructure that ensures absolute data integrity across distributed environments.
+              Driven by a deep passion for cybersecurity, I currently focus on the intersection of data engineering and security operations. From developing analytical datasets for risk mitigation 
+              to researching defensive cloud architectures, my goal is to build resilient, automated infrastructure that ensures absolute data integrity.
             </p>
           </div>
           <div className="projects-section">
