@@ -8,7 +8,7 @@ function BodyContent() {
           <div className="welcome-section">
             <h1>Hello!</h1>
             <p>
-              I am a systems-focused data analyst with a background in architecting high-volume telemetry pipelines for NASCAR, IndyCar, and Formula 1. 
+              I am a highly analytical Security & Data Analyst with a background in architecting high-volume telemetry pipelines for NASCAR, IndyCar, and Formula 1. 
               I specialize in working behind the scenes to build automated Python pipelines that translate complex, raw data into actionable insights and significantly reduce manual overhead.
             </p>
             <p>
